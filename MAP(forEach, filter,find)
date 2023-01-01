@@ -1,0 +1,40 @@
+const  people = [
+    {name: 'Vad', age: 25, budget: 400},
+    {name: 'Mod', age: 16, budget: 100},
+    {name: 'Tod', age: 20, budget: 300},
+]
+
+// for (let i = 0; i < people.length; i++) {
+//       console.log(people[i]);
+// }
+//
+// for (let i of people) {
+//     console.log(i)
+// }
+//
+//people.forEach(i => console.log(i))// Выводит целиком объект
+//
+// let newPeople = people.map(i => `${i.budget}` * 2)
+// console.log(newPeople)//[800, 200, 600]
+//
+//const adults = people.filter(i => i.age >= 18)
+//console.log(adults) //{name: 'Vad', age: 25, budget: 400} {name: 'Tod', age: 20, budget: 300}
+//
+// let sum = people.reduce((a, i) => a + i.budget , 0)
+// console.log(sum) // 800
+//
+// let name = people.find(i => i.name == 'Mod')
+// console.log(name); //{name: 'Mod', age: 16, budget: 100}
+//
+// let nameIndex = people.findIndex(i => i.name == 'Mod')
+// console.log(nameIndex); // 1
+//
+// let sum = people
+//     .filter(i => i.budget > 100)
+//     .map(i => {
+//         return {
+//             info: `${i.name} (${i.age})`,
+//             budget: i.budget
+//         }
+//     })
+// console.log(sum)//{info: 'Vad (25)', budget: 400}{info: 'Tod (20)', budget: 300}
