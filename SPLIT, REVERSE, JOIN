@@ -1,0 +1,16 @@
+//Palindom or not
+function palindrome(str) {
+  var re = /[\W_]/gi;  ////  = /[^A-Za-z0–9]/gi;
+  var lowRegStr = str.toLowerCase().replace(re, '');
+  var reverseStr = lowRegStr.split('').reverse().join(''); 
+  return reverseStr === lowRegStr;
+}
+palindrome("A man, a plan, a canal. Panama");
+//////////////////////////////////
+//
+function reverse(string){
+    return string.split(' ').reverse('').join(' ');
+  }
+  console.log(reverse('Todd go to home')); // home to go Todd
+//////////////////////////////////
+//
